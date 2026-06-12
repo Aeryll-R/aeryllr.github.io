@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+  
   const navbar = document.getElementById('navbar');
   if (navbar) {
     window.addEventListener('scroll', () => {
