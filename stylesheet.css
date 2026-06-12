@@ -23,14 +23,12 @@ body {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.61);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
-  padding: 1rem 0;
+  padding: 8px 0;
 }
 .navbar.scrolled {
-  border-bottom: 1px solid var(--border-light);
   padding: 0.6rem 0;
 }
 .navbar-brand {
@@ -57,7 +55,7 @@ body {
 }
 
 .section-wrap {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 .s-eyebrow {
   font-family: var(--font-mono);
@@ -194,7 +192,7 @@ body {
   justify-content: center;
   color: var(--pink-primary);
   gap: 0.5rem;
-  border-radius: 4px;
+  border-radius: 4px;;
 }
 .info-block {
   margin-top: 2rem;
@@ -238,7 +236,6 @@ body {
 
 
 
-/*CONTAINER GRID*/
 .portfolio-compact-container {
   max-width: 1140px; 
   margin: 0 auto;
@@ -343,7 +340,7 @@ body {
 
 
 
-/*CONTACT SECTION*/
+
 .contact-inner {
   text-align: center;
   background-color: var(--bg-sub);
@@ -398,7 +395,7 @@ body {
   color: var(--pink-primary);
 }
 
-/* --- FOOTER --- */
+
 footer {
   background-color: #FFFFFF;
   border-top: 1px solid var(--border-light);
@@ -412,7 +409,7 @@ footer p {
   margin: 0;
 }
 
-/* --- UTILITY ANIMATIONS --- */
+
 .scroll-hint {
   position: absolute;
   bottom: 2rem;
