@@ -1,35 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.getElementById('navbar');
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    /*Morph Navbar*/
+    
+  const navbar = document.getElementById('navbar');
+  if (navbar) {
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+  }
+
+  const sections = document.querySelectorAll('section[id]');
+  sections.forEach(sec => {
+    new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          document.querySelectorAll('.navbar-nav .nav-link').forEach(l => l.classList.remove('active-link'));
+          const activeItem = document.querySelector(`.navbar-nav .nav-link[href="#${sec.id}"]`);
+          if (activeItem) activeItem.classList.add('active-link');
         }
+      });
+    }, { threshold: 0.4 }).observe(sec);
+  });
 
-
-        let currentSectionId = '';
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-
-            
-            if (window.scrollY >= (sectionTop - 100)) {
-                currentSectionId = section.getAttribute('id');
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${currentSectionId}`) {
-                link.classList.add('active');
-            }
-        });
+  const fadeUpElements = document.querySelectorAll('.fade-up');
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Staggered speed adjusted smoothly for the 4-column inline structure
+        entry.target.style.transitionDelay = `${(index % 4) * 0.08}s`;
+        entry.target.classList.add('visible');
+        fadeObserver.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.1 });
+
+  fadeUpElements.forEach(el => fadeObserver.observe(el));
 });
