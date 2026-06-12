@@ -4,95 +4,348 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aeryll Reign Moncayo | Portfolio</title>
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="stylesheet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-    <div class="container-lg navbar-capsule-inner">
-      <a class="navbar-brand d-flex align-items-center" href="#home">
-        <span class="fw-bold">ARM.</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item"><a href="#home" class="nav-link active">HOME</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-          <li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
-        </ul>
-      </div>
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="nav-brand navbar-brand" href="#home">ARM<em>.</em></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a href="#home"      class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about"     class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <section id="home" class="section section-home py-5 mt-5">
-    <div class="container-lg">
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <h1 class="display-1 fw-bold text-uppercase">Aeryll Reign</h1>
-          <p class="lead text-muted">Web Developer & Graphic Designer</p>
-          <p class="intro-desc">
-            Building functional front-end applications, optimizing back-end workflows, 
-            and crafting intentional visual design solutions.
-          </p>
-          <a href="#portfolio" class="btn btn-dark btn-lg px-4 me-2">Explore Projects</a>
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <h2 class="outline">Annyeong!</h2>
+          <h1 class="hero-name">I'm Aeryll</h1>
+        <p class="hero-role">Web Developer &amp; <span class="pink-text">Graphic Designer</span></p>
+        <p class="hero-desc">
+          Building functional front-end interfaces and solid back-end systems —
+          crafting design solutions that look intentional and work reliably.
+        </p>
+        <div class="mb-4">
+          <span class="pill"><i class="bi bi-code-slash"></i>Front-End Dev</span>
+          <span class="pill"><i class="bi bi-server"></i>Back-End Dev</span>
+          <span class="pill"><i class="bi bi-palette2"></i>Graphic Design</span>
+          <span class="pill"><i class="bi bi-mortarboard"></i>BSIT · PUP Sto. Tomas</span>
+        </div>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#portfolio" class="btn-pink">View My Work</a>
+          <a href="#contact"   class="btn-outline-pink">Get In Touch</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="portfolio" class="py-5 bg-light">
-    <div class="container-lg">
-      <h2 class="mb-4 text-uppercase tracking-wider">Selected Works</h2>
-      <div class="row g-4">
-        
-        <div class="col-md-6">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <span class="badge bg-secondary mb-2">E-Commerce Web App</span>
-              <h3 class="card-title h4">Beauty Essence</h3>
-              <p class="card-text text-muted">A dedicated e-commerce web platform showcasing skin care formulation transparency, tailored ingredients, and fluid user experiences.</p>
-              <div class="d-flex gap-2 mt-3">
-                <span class="small text-muted font-monospace">#HTML5</span>
-                <span class="small text-muted font-monospace">#CSS3</span>
-                <span class="small text-muted font-monospace">#Flask</span>
+<section id="about" class="section-wrap">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <div class="col-lg-4 fade-up">
+        <div class="photo-frame">
+          <img
+            src="Aeryll.jpg"
+            alt="Aeryll Reign Moncayo"
+            class="about-photo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="about-photo-placeholder" style="display:none;">
+            <i class="bi bi-person-bounding-box"></i>
+            <span>Aeryll.jpg</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 fade-up">
+        <div class="s-eyebrow">01 — About Me</div>
+        <h2 class="s-title">The person behind<br>the code.</h2>
+        <hr class="pink-rule" />
+
+        <p class="about-p">
+          Hi! I'm <strong>Aeryll Reign Moncayo</strong> — a <span class="pink-text">BS Information Technology</span> student
+          at <strong>Polytechnic University of the Philippines, Sto. Tomas Campus</strong>.[cite: 1]
+          I work on both <strong>front-end and back-end development</strong> at the same time,
+          because understanding the full picture makes me a better developer on every layer.[cite: 1]
+        </p>
+        <p class="about-p mt-3">
+          I enjoy turning ideas into interfaces that are clean, functional, and purposeful —
+          whether that's a booking system, a game, or a disaster risk platform.[cite: 1]
+        </p>
+
+        <div class="cert-badge">
+          <i class="bi bi-patch-check-fill"></i>
+          Certified Cisco Networking Academy Student
+        </div>
+
+        <div class="info-block">
+          <div class="info-row">
+            <i class="bi bi-mortarboard info-icon"></i>
+            <div>
+              <div class="info-key">School</div>
+              <div class="info-val">Polytechnic University of the Philippines, Sto. Tomas Campus</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="bi bi-journal-code info-icon"></i>
+            <div>
+              <div class="info-key">Course</div>
+              <div class="info-val">BS Information Technology (BSIT)</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="bi bi-layers info-icon"></i>
+            <div>
+              <div class="info-key">Focus</div>
+              <div class="info-val">Full-Stack Web Development · Graphic Design · Networking</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <i class="bi bi-github info-icon"></i>
+            <div>
+              <div class="info-key">GitHub</div>
+              <div class="info-val">
+                <a href="https://github.com/Aeryll-R" target="_blank" style="color:var(--pink-primary);text-decoration:none;">@Aeryll-R</a>
               </div>
             </div>
           </div>
         </div>
 
-         <div class="col-md-6">
-          <div class="card h-100 border-0 shadow-sm">
-            <div class="card-body p-4">
-              <span class="badge bg-secondary mb-2">Ticketing Booth Website</span>
-              <h3 class="card-title h4">Paglaot</h3>
-              <p class="card-text text-muted">
-                Inspired by the timeless tradition of setting sail into horizons unknown, Paglaot is the official ticketing hub for your next great cruise adventure.
-                Whether you are chasing a tropical sunset, seeking a luxurious escape, or plotting a voyage with the whole family, your journey begins right here.</p>
-              <div class="d-flex gap-2 mt-3">
-                <span class="small text-muted font-monospace">#HTML5</span>
-                <span class="small text-muted font-monospace">#CSS3</span>
-                <span class="small text-muted font-monospace">#Database</span>
-              </div>
+        <div class="mt-4">
+          <div style="font-family:var(--font-mono);font-size:.67rem;color:var(--text-muted);letter-spacing:.08em;margin-bottom:.5rem;text-transform:uppercase;">Tech I use</div>
+          <span class="chip"><i class="bi bi-filetype-html"></i>HTML5</span>
+          <span class="chip"><i class="bi bi-filetype-css"></i>CSS3</span>
+          <span class="chip"><i class="bi bi-filetype-js"></i>JavaScript</span>
+          <span class="chip"><i class="bi bi-bootstrap"></i>Bootstrap</span>
+          <span class="chip"><i class="bi bi-filetype-py"></i>Python</span>
+          <span class="chip"><i class="bi bi-braces"></i>Flask</span>
+          <span class="chip"><i class="bi bi-filetype-php"></i>PHP</span>
+          <span class="chip"><i class="bi bi-database"></i>MySQL</span>
+          <span class="chip"><i class="bi bi-github"></i>Git & GitHub</span>
+          <span class="chip"><i class="bi bi-vector-pen"></i>Figma</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section-wrap" style="background-color: #FFF0F2;">
+  <div class="container portfolio-compact-container">
+
+    <div class="row mb-4 fade-up">
+      <div class="col">
+        <div class="s-eyebrow">02 — Portfolio</div>
+        <h2 class="s-title" style="font-size: 2.2rem;">Selected Works</h2>
+        <hr class="pink-rule" />
+        <p style="color:var(--text-muted);font-size:.9rem;max-width:500px;">
+          Four projects across game development, e-commerce, booking, and disaster risk management.[cite: 1]
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-3">
+
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="proj-card">
+          <div class="proj-thumb">
+            🔫
+            <div class="proj-thumb-num">01</div>
+          </div>
+          <div class="proj-body">
+            <span class="proj-badge">Game Development</span>
+            <h3 class="proj-title">War On Drugs</h3>
+            <p class="proj-tagline">A game about the PH War on Drugs</p>
+            <p class="proj-desc">
+              An awareness-driven shooting game that contextualizes the campaign through real scenarios.[cite: 1]
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">Game Dev</span>
+              <span class="proj-tag">JS</span>
+              <span class="proj-tag">HTML5</span>
             </div>
+            <a href="https://github.com/Aeryll-R" target="_blank" class="proj-link">
+              View Project <i class="bi bi-arrow-right"></i>
+            </a>
           </div>
         </div>
-      
-       <div class="portfolio-cta">
-      <a href="https://github.com/Aeryll-R" class="btn-primary">
-        See More of Me!
-      </a>
-    </div>
-  </section>
+      </div>
 
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="proj-card">
+          <div class="proj-thumb">
+            🧴
+            <div class="proj-thumb-num">02</div>
+          </div>
+          <div class="proj-body">
+            <span class="proj-badge">E-Commerce Web App</span>
+            <h3 class="proj-title">Beauty Essence</h3>
+            <p class="proj-tagline">Skincare platform with formulation transparency</p>
+            <p class="proj-desc">
+              Dedicated skincare platform highlighting ingredient transparency and clean interfaces.[cite: 1]
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">Flask</span>
+              <span class="proj-tag">MySQL</span>
+              <span class="proj-tag">CSS3</span>
+            </div>
+            <a href="https://github.com/Aeryll-R" target="_blank" class="proj-link">
+              View Project <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="proj-card">
+          <div class="proj-thumb">
+            ⛴️
+            <div class="proj-thumb-num">03</div>
+          </div>
+          <div class="proj-body">
+            <span class="proj-badge">Booking Website</span>
+            <h3 class="proj-title">Paglaot</h3>
+            <p class="proj-tagline">Ticketing booth for cruise experiences in the PH</p>
+            <p class="proj-desc">
+              Cruise reservation interface featuring clean schedule browsing and mobile optimization.[cite: 1]
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">JS</span>
+              <span class="proj-tag">PHP</span>
+              <span class="proj-tag">MySQL</span>
+            </div>
+            <a href="https://github.com/Aeryll-R" target="_blank" class="proj-link">
+              View Project <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="proj-card">
+          <div class="proj-thumb">
+            🌊
+            <div class="proj-thumb-num">04</div>
+          </div>
+          <div class="proj-body">
+            <span class="proj-badge">Disaster Risk · AI</span>
+            <h3 class="proj-title">survAIval</h3>
+            <p class="proj-tagline">Barangay Disaster Risk Reduction Website</p>
+            <p class="proj-desc">
+              Platform with early warnings and resource tracking for regional disaster management.[cite: 1]
+            </p>
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">AI / ML</span>
+              <span class="proj-tag">Bootstrap</span>
+            </div>
+            <a href="https://github.com/Aeryll-R" target="_blank" class="proj-link">
+              View Project <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mt-4 fade-up">
+      <div class="col">
+        <div style="background:#FFFFFF; border:1px dashed var(--pink-primary); border-radius:8px; padding:1.25rem 1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <div style="font-family:var(--font-mono); font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); margin-bottom:.1rem;">More on GitHub</div>
+            <div style="font-family:var(--font-display); font-weight:700; font-size:1.15rem; color:var(--text-dark);">See the full collection</div>
+          </div>
+          <a href="https://github.com/Aeryll-R" target="_blank" class="btn-pink" style="padding: 0.5rem 1rem; font-size: 0.8rem;">
+            <i class="bi bi-github me-2"></i>@Aeryll-R
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section-wrap">
+  <div class="container">
+    <div class="contact-inner fade-up">
+      <div class="s-eyebrow" style="justify-content:center;">03 — Contact</div>
+      <h2 class="s-title">Let's connect.</h2>
+      <hr class="pink-rule" style="max-width:300px;margin-left:auto;margin-right:auto;" />
+      <p class="contact-tagline">
+        Open to collaborations, project ideas, or just a good conversation about tech and design.
+      </p>
+
+      <div style="max-width:520px;margin:0 auto;text-align:left;">
+
+        <a href="https://github.com/Aeryll-R" target="_blank" class="link-card">
+          <div class="lc-icon"><i class="bi bi-github"></i></div>
+          <div>
+            <div class="lc-label">GitHub</div>
+            <div class="lc-val">@Aeryll-R</div>
+          </div>
+          <i class="bi bi-arrow-up-right lc-arrow"></i>
+        </a>
+
+        <a href="https://linkedin.com" target="_blank" class="link-card">
+          <div class="lc-icon"><i class="bi bi-linkedin"></i></div>
+          <div>
+            <div class="lc-label">LinkedIn</div>
+            <div class="lc-val">Aeryll Reign Moncayo</div>
+          </div>
+          <i class="bi bi-arrow-up-right lc-arrow"></i>
+        </a>
+
+        <a href="mailto:aeryll@email.com" class="link-card">
+          <div class="lc-icon"><i class="bi bi-envelope"></i></div>
+          <div>
+            <div class="lc-label">Email</div>
+            <div class="lc-val">aeryll@email.com</div>
+          </div>
+          <i class="bi bi-arrow-up-right lc-arrow"></i>
+        </a>
+
+        <a href="https://facebook.com" target="_blank" class="link-card">
+          <div class="lc-icon"><i class="bi bi-facebook"></i></div>
+          <div>
+            <div class="lc-label">Facebook</div>
+            <div class="lc-val">Aeryll Reign Moncayo</div>
+          </div>
+          <i class="bi bi-arrow-up-right lc-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>designed &amp; built by <span class="pink-text">Aeryll Reign Moncayo</span> · 2025</p>
+    <p style="margin-top:.4rem;font-size:.7rem;">
+      PUP Sto. Tomas &nbsp;·&nbsp; BSIT &nbsp;·&nbsp;
+      <a href="https://github.com/Aeryll-R" target="_blank" style="color:var(--pink-primary);text-decoration:none;">@Aeryll-R</a>
+    </p>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
